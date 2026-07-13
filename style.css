@@ -455,3 +455,89 @@
     z-index: 5;
 }
 
+#TrainingProgramSection {
+    width: 100%;
+    background-color: #0010C1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 64px 64px;
+}
+
+#TrainingProgramTitle {
+    font-size: 36px;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    padding: 16px 32px;
+    font-family: 'FZPoppinsExtraBold', sans-serif;
+}
+
+#TrainingProgramContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    padding: 64px 0;
+    background: #FFFFFF;
+    border-radius: 24px;
+    padding: 40px;
+}
+
+.TrainingProgramCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+    background-color: #FFFFFF;
+    border-radius: 36px;
+    padding: 32px;
+    border: 2px solid #073ACB;
+    position: relative;
+}
+
+.TrainingProgramCard > :first-child {
+    width: 64px;
+    height: 64px;
+    background-color: #004e8a1a;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.TrainingProgramCard > :nth-child(2) {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0B1C30;
+}
+
+.TrainingProgramCard > :nth-child(3) {
+    font-size: 16px;
+    color: #414751;
+}
+
+.TrainingProgramCard > :nth-child(4) {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 16px 0;
+}
+
+.TrainingProgramCard > :nth-child(4) div {
+    color: #0B1C30;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.TrainingProgramCard button {
+    color: #2563EB;
+    padding: 16px 24px;
+    cursor: pointer;
+    border-radius: 16px;
+    border: 2px solid #004e8a33;
+    font-weight: bold;
+    background-color: #FFFFFF;
+}
+
