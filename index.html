@@ -1,291 +1,808 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test</title>
+    <title>NewSkyEdu - Ôn Thi ĐGNL & ĐGTD Hàng Đầu</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://code.iconify.design/iconify-icon/3.0.0/iconify-icon.min.js"></script>
 </head>
+
 <body>
-    <div id="Header">
-        <div>logo</div>
-        <div>btn liên hệ</div>
-    </div>
-    <div id="TopNavBar">
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Contact</a>
-        <a href="#">Login</a>
-        <a href="#">Register</a>
-    </div>
-    <div id="HeroSection">
-        <div id="HeroContent">
-            <div>Học tài - Thi đậu</div>
-            <div>Luyện thi Đánh giá năng lực<br><span style="background: linear-gradient(180deg, #FB9200, #FB9200,  #DE0622); background-clip: text; webkit-background-clip: text; color: transparent; webkit-text-fill-color: transparent; display: inline-block; font-family: 'FZPoppinsExtraBold', sans-serif;">HSA - TSA - BCA</span></div>
-            <div>Chương trình đào tạo chuyên sâu Lộ trình cá nhân hóa giúp chinh phục các kỳ thi tuyển sinh đại học hàng đầu Việt Nam.</div>
-            <div>
-                NSE - ĐẠI SỨ GIÁO DỤC<br>CỦA HSA EDUCATION
+    <!-- Header -->
+    <header id="header" class="container">
+        <div class="header-logo">NewSky<span>Edu</span></div>
+        <button class="btn-primary contact-header-btn">
+            Liên hệ ngay
+            <iconify-icon icon="tabler:phone" style="font-size:20px"></iconify-icon>
+        </button>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav id="top-nav-bar">
+        <div class="nav-container container">
+            <a href="#" class="active">Home</a>
+            <a href="#">Đơn vị khảo thí chính thức</a>
+            <a href="#">Chương trình đào tạo</a>
+            <a href="#">Khóa học</a>
+            <a href="#">Giảng viên</a>
+            <a href="#">Liên hệ ngay</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero-section">
+        <div class="hero-container container">
+            <div class="hero-content">
+                <div class="badge-tag hero-badge">Học tài - Thi đậu</div>
+                <h1 class="hero-title">Luyện thi<br>Đánh giá năng lực<br><span class="hero-gradient-text">HSA - TSA -
+                        BCA</span></h1>
+                <p class="hero-desc-text">Chương trình đào tạo chuyên sâu.<br>Lộ trình cá nhân hóa giúp chinh
+                    phục<br>các kỳ thi tuyển sinh đại học hàng đầu Việt Nam.</p>
+                <div class="hero-highlight">
+                    NSE - ĐẠI SỨ GIÁO DỤC<br>CỦA HSA EDUCATION
+                </div>
+                <button class="btn-secondary hero-cta-btn">
+                    <span>Nhận tư vấn ngay</span>
+                    <iconify-icon icon="tabler:arrow-right" style="font-size:24px"></iconify-icon>
+                </button>
             </div>
-            <button>
-                <div>Nhận tư vấn ngay</div>
-                <iconify-icon icon="tabler:arrow-right" style="font-size:24px"></iconify-icon>
-            </button>
-        </div>
-        <div id="HeroImage">
-            <img src="./images/Hero Image.png" alt="Hero Image">
-            <div id="HeroImageOverlay">
-                <div id="HeroImageOverlayIcon">
-                    <iconify-icon icon="pinhead:medal-ribbon-with-star" style="font-size:24px;color:#DE0622"></iconify-icon>
-                </div>
-                <div id="HeroImageOverlayText">
-                    <div>Học viên đạt</div>
-                    <div>100+ Điểm HSA</div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="StatisticsSection">
-        <div class="statistic">
-            <div>100+</div>
-            <div>Trường xét ĐGNL HSA</div>
-        </div>
-        <div class="statistic">
-            <div style="color: #FB9200;">50+</div>
-            <div>Trường xét ĐGNL TSA</div>
-        </div>
-        <div class="statistic">
-            <div style="color: #FB9200;">98%</div>
-            <div>Tỉ lệ đỗ đại học Top 1</div>
-        </div>
-        <div class="statistic">
-            <div>10k+</div>
-            <div>Học sinh tin tưởng</div>
-        </div>
-    </div>
-    <div id="ClassesSection">
-        <div id="ClassesTitle">
-            Chuyên ôn thi ĐGNL - ĐGTD các lớp đang tuyển sinh
-        </div>
-    </div>
-    <div id="LanguageCertSection">
-        <div id="LanguageCertTitle">
-            Đơn vị đăng ký & khảo thí chính thức
-        </div>
-        <div id="LanguageCertContent">
-            <div id="LanguageCertName">Language<span style="color: #ED1C24;">Cert</span></div>
-            <div id="LanguageCertDescription">LanguageCert là chứng chỉ tiếng Anh quốc tế khung 6 Bậc Châu Âu<br>dành cho Du Học, Định Cư, Lao động, đánh giá năng lực Đại Học, Thạc sĩ...</div>
-            <div id="LanguageCertCTA">
-                <div class="LanguageCertCTA">
-                    <div class="LanguageCertCTAColor"></div>
-                    <div>icon</div>
-                    <div>GLOBAL RECOGNITION</div>
-                    <div>Được công nhận rộng rãi bởi các trường đại học và tổ chức trên toàn thế giới.</div>
-                </div>
-                <div class="LanguageCertCTA">
-                    <div class="LanguageCertCTAColor"></div>
-                    <div>icon</div>
-                    <div>MOET APPROVED</div>
-                    <div>Được Bộ Giáo dục & Đào tạo Việt Nam cấp phép và công nhận chính thức.</div>
-                </div>
-                <div class="LanguageCertCTA">
-                    <div class="LanguageCertCTAColor"></div>
-                    <div>icon</div>
-                    <div>FAST & FLEXIBLE</div>
-                    <div>Lịch thi linh hoạt, có kết quả nhanh chóng chỉ sau vài ngày làm việc.</div>
+            <div class="hero-image">
+                <img src="./images/Hero Image.png" alt="Hero Image">
+                <div class="hero-image-overlay">
+                    <div class="hero-image-overlay-icon">
+                        <iconify-icon icon="pinhead:medal-ribbon-with-star"
+                            style="font-size:24px;color:#DE0622"></iconify-icon>
+                    </div>
+                    <div class="hero-image-overlay-text">
+                        <div>Học viên đạt</div>
+                        <div>100+ Điểm HSA</div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div id="OfficialPartnerSection">
-        <div id="OfficialPartnerContent">
-            <div id="OfficialPartnerText">
-                <div id="OfficialPartnerTitle">Offical Partner</div>
-                <div id="OfficialPartnerName">Language<span style="color: #ED1C24;">Cert</span> & <span style="color: #2563EB;">NewSky</span><span style="color: #FB9200;">Edu</span></div>
-                <div id="OfficialPartnerDescription">Đơn vị khảo thí chính thức, cung cấp các chứng chỉ ngoại ngữ quốc tế được công nhận rộng rãi tại Việt Nam và toàn cầu.</div>
-                <div id="OfficialPartnerCTA">
-                    <div class="OfficialPartnerCTA">
-                        <div>icon</div>
-                        <div class="OfficialPartnerCTAText">
+    </section>
+
+    <!-- Statistics Section -->
+    <section id="statistics-section" class="section-padding">
+        <div class="statistics-container container">
+            <div class="statistic-card">
+                <div class="stat-number text-blue">100+</div>
+                <div class="stat-label">Trường xét ĐGNL HSA</div>
+            </div>
+            <div class="statistic-card">
+                <div class="stat-number text-orange">50+</div>
+                <div class="stat-label">Trường xét ĐGNL TSA</div>
+            </div>
+            <div class="statistic-card">
+                <div class="stat-number text-orange">98%</div>
+                <div class="stat-label">Tỉ lệ đỗ đại học Top 1</div>
+            </div>
+            <div class="statistic-card">
+                <div class="stat-number text-blue">10k+</div>
+                <div class="stat-label">Học sinh tin tưởng</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Classes Section -->
+    <section id="classes-section" class="section-padding">
+        <div class="container">
+            <h2 class="section-title text-center">Chuyên ôn thi ĐGNL - ĐGTD các lớp đang tuyển sinh</h2>
+        </div>
+    </section>
+
+    <!-- Language Cert Section -->
+    <section id="language-cert-section" class="section-padding">
+        <div class="language-cert-container container">
+            <div class="badge-tag lang-cert-badge" style="font-size: 24px;">Đơn vị đăng ký & khảo thí chính thức</div>
+            <div class="language-cert-content">
+                <div class="language-cert-name">Language<span class="text-red">Cert</span></div>
+                <p class="section-desc text-center">LanguageCert là chứng chỉ tiếng Anh quốc tế khung 6 Bậc Châu
+                    Âu<br>dành cho Du Học, Định Cư, Lao động, đánh giá năng lực Đại Học, Thạc sĩ...</p>
+
+                <div class="language-cert-cta-grid">
+                    <div class="language-cert-cta-card">
+                        <div class="cta-card-accent"></div>
+                        <div class="cta-card-icon">
+                            <iconify-icon icon="tabler:globe" style="font-size: 32px; color: #DE0622;"></iconify-icon>
+                        </div>
+                        <h4 class="cta-card-title">GLOBAL RECOGNITION</h4>
+                        <p class="cta-card-desc">Được công nhận rộng rãi bởi các trường đại học và tổ chức trên toàn thế
+                            giới.</p>
+                    </div>
+                    <div class="language-cert-cta-card">
+                        <div class="cta-card-accent"></div>
+                        <div class="cta-card-icon">
+                            <iconify-icon icon="tabler:certificate"
+                                style="font-size: 32px; color: #DE0622;"></iconify-icon>
+                        </div>
+                        <h4 class="cta-card-title">MOET APPROVED</h4>
+                        <p class="cta-card-desc">Được Bộ Giáo dục & Đào tạo Việt Nam cấp phép và công nhận chính thức.
+                        </p>
+                    </div>
+                    <div class="language-cert-cta-card">
+                        <div class="cta-card-accent"></div>
+                        <div class="cta-card-icon">
+                            <iconify-icon icon="tabler:bolt" style="font-size: 32px; color: #DE0622;"></iconify-icon>
+                        </div>
+                        <h4 class="cta-card-title">FAST & FLEXIBLE</h4>
+                        <p class="cta-card-desc">Lịch thi linh hoạt, có kết quả nhanh chóng chỉ sau vài ngày làm việc.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Official Partner Section -->
+    <section id="official-partner-section" class="section-padding">
+        <div class="official-partner-content container" style="padding: 0;">
+            <div class="official-partner-text">
+                <span class="section-subtitle">Official Partner</span>
+                <h2 class="official-partner-name">Language<span class="text-red">Cert</span> & <span
+                        class="text-blue">NewSky</span><span class="text-orange">Edu</span></h2>
+                <p class="section-desc">Đơn vị khảo thí chính thức, cung cấp các chứng chỉ ngoại ngữ quốc tế được công
+                    nhận rộng rãi tại Việt Nam và toàn cầu.</p>
+
+                <div class="official-partner-cta-list">
+                    <div class="official-partner-cta-item">
+                        <div class="cta-item-icon">
+                            <iconify-icon icon="tabler:shield-lock"
+                                style="font-size: 20px; color: #FB9200;"></iconify-icon>
+                        </div>
+                        <div class="official-partner-cta-text">
                             <div>Bảo mật tuyệt đối</div>
                             <div>Hệ thống thi cử hiện đại, chống gian lận 100%.</div>
                         </div>
                     </div>
-                    <div class="OfficialPartnerCTA">
-                        <div>icon</div>
-                        <div class="OfficialPartnerCTAText">
+                    <div class="official-partner-cta-item">
+                        <div class="cta-item-icon">
+                            <iconify-icon icon="tabler:calendar-time"
+                                style="font-size: 20px; color: #FB9200;"></iconify-icon>
+                        </div>
+                        <div class="official-partner-cta-text">
                             <div>Lịch thi linh hoạt</div>
                             <div>Đăng ký và thi ngay trong vòng 48h.</div>
                         </div>
                     </div>
-                    <div class="OfficialPartnerCTA">
-                        <div>icon</div>
-                        <div class="OfficialPartnerCTAText">
+                    <div class="official-partner-cta-item">
+                        <div class="cta-item-icon">
+                            <iconify-icon icon="tabler:award" style="font-size: 20px; color: #FB9200;"></iconify-icon>
+                        </div>
+                        <div class="official-partner-cta-text">
                             <div>Công nhận quốc tế</div>
                             <div>Sử dụng xét tuyển thẳng vào các trường ĐH lớn.</div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div id="OfficialPartnerImage">
-                <div id="OfficialPartnerImageText">Newskyedu Đối tác chính thức tiếp nhận đăng ký<br>và tổ chức khảo thí  Languegecert Hải Dương - Hải Phòng</div>
-                <div id="OfficialPartnerImageOverlay"></div>
+            <div class="official-partner-image">
+                <div class="official-partner-image-text">NewSkyEdu Đối tác chính thức tiếp nhận đăng ký<br>và tổ chức
+                    khảo thí LanguageCert Hải Dương - Hải Phòng</div>
+                <div class="official-partner-image-overlay"></div>
             </div>
         </div>
-    </div>
-    <div id="TrainingProgramSection">
-        <div id="TrainingProgramTitle">Chương trình đào tạo trọng tâm</div>
-        <div id="TrainingProgramContent">
-            <div class="TrainingProgramCard">
-                <div>icon</div>
-                <div>Luyện thi HSA</div>
-                <div>Đánh giá năng lực ĐHQGHN - Lộ trình bứt phá điểm số toàn diện 3 phần Tư duy.</div>
-                <div>
-                    <div>150+ Đề thi thử độc quyền</div>
-                    <div>Tài liệu bám sát cấu trúc mới</div>
+    </section>
+
+    <!-- Training Program Section -->
+    <section id="training-program-section" class="section-padding">
+        <div class="container">
+            <h2 class="section-title text-center text-white">Chương trình đào tạo trọng tâm</h2>
+            <div class="training-program-grid">
+                <div class="training-program-card">
+                    <div class="card-icon">
+                        <iconify-icon icon="tabler:school" style="font-size: 32px; color: #2563EB;"></iconify-icon>
+                    </div>
+                    <h3 class="card-title">Luyện thi HSA</h3>
+                    <p class="card-desc">Đánh giá năng lực ĐHQGHN - Lộ trình bứt phá điểm số toàn diện 3 phần Tư duy.
+                    </p>
+                    <div class="card-features">
+                        <div><iconify-icon icon="tabler:circle-check"
+                                style="color: #2563EB; margin-right: 8px;"></iconify-icon>150+ Đề thi thử độc quyền
+                        </div>
+                        <div><iconify-icon icon="tabler:circle-check"
+                                style="color: #2563EB; margin-right: 8px;"></iconify-icon>Tài liệu bám sát cấu trúc mới
+                        </div>
+                    </div>
+                    <button class="btn-primary">Nhận tư vấn ngay</button>
                 </div>
-                <button>Nhận tư vấn ngay</button>
-            </div>
-            <div class="TrainingProgramCard">
-                <div>icon</div>
-                <div>Luyện thi TSA</div>
-                <div>Đánh giá tư duy ĐHBK Hà Nội - Chuyên sâu Toán học, Đọc hiểu và Khoa học.</div>
-                <div>
-                    <div>Giải pháp tư duy logic cao</div>
-                    <div>Giảng viên top đầu Bách Khoa</div>
+                <div class="training-program-card">
+                    <div class="card-icon">
+                        <iconify-icon icon="tabler:brain" style="font-size: 32px; color: #2563EB;"></iconify-icon>
+                    </div>
+                    <h3 class="card-title">Luyện thi TSA</h3>
+                    <p class="card-desc">Đánh giá tư duy ĐHBK Hà Nội - Chuyên sâu Toán học, Đọc hiểu và Khoa học.</p>
+                    <div class="card-features">
+                        <div><iconify-icon icon="tabler:circle-check"
+                                style="color: #2563EB; margin-right: 8px;"></iconify-icon>Giải pháp tư duy logic cao
+                        </div>
+                        <div><iconify-icon icon="tabler:circle-check"
+                                style="color: #2563EB; margin-right: 8px;"></iconify-icon>Giảng viên top đầu Bách Khoa
+                        </div>
+                    </div>
+                    <button class="btn-primary">Nhận tư vấn ngay</button>
                 </div>
-                <button>Nhận tư vấn ngay</button>
-            </div>
-            <div class="TrainingProgramCard">
-                <div>icon</div>
-                <div>Luyện thi BCA</div>
-                <div>Kỳ thi Bộ Công An - Tổng ôn kiến thức nền tảng và kỹ năng giải đề đặc thù.</div>
-                <div>
-                    <div>Cam kết đầu ra bằng văn bản</div>
-                    <div>Hỗ trợ hồ sơ xét tuyển A-Z</div>
-                </div>
-                <button>Nhận tư vấn ngay</button>
-            </div>
-        </div>
-    </div>
-    <div>
-        <div>Các khóa học tiêu biểu</div>
-        <div>Lộ trình học tập tối ưu được thiết kế bởi đội ngũ chuyên gia hàng đầu, <br>giúp bạn bứt phá điểm số trong các kỳ thi quan trọng.</div>
-        <div>
-            <div> 
-                <div>
-                    <div>Luyện thi TSA</div>
-                    <div>5.0 sao</div>
-                </div>
-                <div>image</div>
-                <div>(TSA) Đánh giá tư duy Bách khoa</div>
-                <div>
-                    <div>18 bài học</div>
-                    <div>400 Học viên</div>
-                </div>
-                <hr>
-                <div>
-                    <div>3.900.000 ₫</div>
-                    <div>Giảm 50%</div>
-                </div>
-            </div>
-        </div>
-                <div>
-            <div> 
-                <div>
-                    <div>Luyện thi TSA</div>
-                    <div>5.0 sao</div>
-                </div>
-                <div>image</div>
-                <div>(TSA) Đánh giá tư duy Bách khoa</div>
-                <div>
-                    <div>18 bài học</div>
-                    <div>400 Học viên</div>
-                </div>
-                <hr>
-                <div>
-                    <div>3.900.000 ₫</div>
-                    <div>Giảm 50%</div>
+                <div class="training-program-card">
+                    <div class="card-icon">
+                        <iconify-icon icon="tabler:shield" style="font-size: 32px; color: #2563EB;"></iconify-icon>
+                    </div>
+                    <h3 class="card-title">Luyện thi BCA</h3>
+                    <p class="card-desc">Kỳ thi Bộ Công An - Tổng ôn kiến thức nền tảng và kỹ năng giải đề đặc thù.</p>
+                    <div class="card-features">
+                        <div><iconify-icon icon="tabler:circle-check"
+                                style="color: #2563EB; margin-right: 8px;"></iconify-icon>Cam kết đầu ra bằng văn bản
+                        </div>
+                        <div><iconify-icon icon="tabler:circle-check"
+                                style="color: #2563EB; margin-right: 8px;"></iconify-icon>Hỗ trợ hồ sơ xét tuyển A-Z
+                        </div>
+                    </div>
+                    <button class="btn-primary">Nhận tư vấn ngay</button>
                 </div>
             </div>
         </div>
-                <div>
-            <div> 
-                <div>
-                    <div>Luyện thi TSA</div>
-                    <div>5.0 sao</div>
+    </section>
+
+    <!-- Featured Courses Section -->
+    <section id="featured-courses-section" class="section-padding">
+        <div class="container">
+            <h2 class="section-title text-center">Các khóa học tiêu biểu</h2>
+            <p class="section-desc text-center">Lộ trình học tập tối ưu được thiết kế bởi đội ngũ chuyên gia hàng
+                đầu,<br>giúp bạn bứt phá điểm số trong các kỳ thi quan trọng.</p>
+            <div class="featured-courses-grid">
+                <!-- Course 1 -->
+                <div class="featured-course-card">
+                    <div class="featured-course-card-image">
+                        <div class="featured-course-card-tag bg-orange">Luyện thi TSA</div>
+                        <div class="featured-course-card-rating">5.0 sao</div>
+                    </div>
+                    <div class="featured-course-card-content">
+                        <h3 class="featured-course-card-title">(TSA) Đánh giá tư duy Bách khoa</h3>
+                        <div class="featured-course-card-stats">
+                            <div class="featured-course-card-lessons">
+                                <iconify-icon icon="tabler:book-2" class="text-orange"
+                                    style="margin-right:6px;"></iconify-icon>
+                                18 bài học
+                            </div>
+                            <div class="featured-course-card-students">
+                                <iconify-icon icon="tabler:users" class="text-orange"
+                                    style="margin-right:6px;"></iconify-icon>
+                                400 Học viên
+                            </div>
+                        </div>
+                        <hr class="card-divider">
+                        <div class="featured-course-card-price-row">
+                            <div class="featured-course-card-price">3.900.000 đ</div>
+                            <div class="featured-course-card-discount">Giảm 50%</div>
+                        </div>
+                    </div>
                 </div>
-                <div>image</div>
-                <div>(TSA) Đánh giá tư duy Bách khoa</div>
-                <div>
-                    <div>18 bài học</div>
-                    <div>400 Học viên</div>
+                <!-- Course 2 -->
+                <div class="featured-course-card">
+                    <div class="featured-course-card-image">
+                        <div class="featured-course-card-tag bg-blue">Luyện thi HSA</div>
+                        <div class="featured-course-card-rating">4.9 sao</div>
+                    </div>
+                    <div class="featured-course-card-content">
+                        <h3 class="featured-course-card-title">(HSA) ĐGNL Hà Nội</h3>
+                        <div class="featured-course-card-stats">
+                            <div class="featured-course-card-lessons">
+                                <iconify-icon icon="tabler:book-2" class="text-blue"
+                                    style="margin-right:6px;"></iconify-icon>
+                                25 bài học
+                            </div>
+                            <div class="featured-course-card-students">
+                                <iconify-icon icon="tabler:users" class="text-blue"
+                                    style="margin-right:6px;"></iconify-icon>
+                                150 Học viên
+                            </div>
+                        </div>
+                        <hr class="card-divider">
+                        <div class="featured-course-card-price-row">
+                            <div class="featured-course-card-price">3.900.000 đ</div>
+                            <div class="featured-course-card-discount">Giảm 50%</div>
+                        </div>
+                    </div>
                 </div>
-                <hr>
-                <div>
-                    <div>3.900.000 ₫</div>
-                    <div>Giảm 50%</div>
+                <!-- Course 3 -->
+                <div class="featured-course-card">
+                    <div class="featured-course-card-image">
+                        <div class="featured-course-card-tag bg-purple">Luyện thi</div>
+                        <div class="featured-course-card-rating">4.8 sao</div>
+                    </div>
+                    <div class="featured-course-card-content">
+                        <h3 class="featured-course-card-title">ĐGNL Các Trường Sư phạm</h3>
+                        <div class="featured-course-card-stats">
+                            <div class="featured-course-card-lessons">
+                                <iconify-icon icon="tabler:book-2" class="text-purple"
+                                    style="margin-right:6px;"></iconify-icon>
+                                30 bài học
+                            </div>
+                            <div class="featured-course-card-students">
+                                <iconify-icon icon="tabler:users" class="text-purple"
+                                    style="margin-right:6px;"></iconify-icon>
+                                120 Học viên
+                            </div>
+                        </div>
+                        <hr class="card-divider">
+                        <div class="featured-course-card-price-row">
+                            <div class="featured-course-card-price">3.900.000 đ</div>
+                            <div class="featured-course-card-discount">Giảm 50%</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Course 4 -->
+                <div class="featured-course-card">
+                    <div class="featured-course-card-image">
+                        <div class="featured-course-card-tag bg-red">Luyện thi BCA</div>
+                        <div class="featured-course-card-rating">4.9 sao</div>
+                    </div>
+                    <div class="featured-course-card-content">
+                        <h3 class="featured-course-card-title">(BCA) ĐGNL Bộ Công an</h3>
+                        <div class="featured-course-card-stats">
+                            <div class="featured-course-card-lessons">
+                                <iconify-icon icon="tabler:book-2" class="text-red"
+                                    style="margin-right:6px;"></iconify-icon>
+                                22 bài học
+                            </div>
+                            <div class="featured-course-card-students">
+                                <iconify-icon icon="tabler:users" class="text-red"
+                                    style="margin-right:6px;"></iconify-icon>
+                                95 Học viên
+                            </div>
+                        </div>
+                        <hr class="card-divider">
+                        <div class="featured-course-card-price-row">
+                            <div class="featured-course-card-price">3.900.000 đ</div>
+                            <div class="featured-course-card-discount">Giảm 50%</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Course 5 -->
+                <div class="featured-course-card">
+                    <div class="featured-course-card-image">
+                        <div class="featured-course-card-tag bg-green">Luyện thi QDA</div>
+                        <div class="featured-course-card-rating">4.7 sao</div>
+                    </div>
+                    <div class="featured-course-card-content">
+                        <h3 class="featured-course-card-title">(QDA) ĐGNL Bộ Quốc phòng</h3>
+                        <div class="featured-course-card-stats">
+                            <div class="featured-course-card-lessons">
+                                <iconify-icon icon="tabler:book-2" class="text-green"
+                                    style="margin-right:6px;"></iconify-icon>
+                                32 bài học
+                            </div>
+                            <div class="featured-course-card-students">
+                                <iconify-icon icon="tabler:users" class="text-green"
+                                    style="margin-right:6px;"></iconify-icon>
+                                180 Học viên
+                            </div>
+                        </div>
+                        <hr class="card-divider">
+                        <div class="featured-course-card-price-row">
+                            <div class="featured-course-card-price">3.900.000 đ</div>
+                            <div class="featured-course-card-discount">Giảm 50%</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Course 6 -->
+                <div class="featured-course-card">
+                    <div class="featured-course-card-image">
+                        <div class="featured-course-card-tag bg-blue">Luyện thi (V-ACT)</div>
+                        <div class="featured-course-card-rating">4.9 sao</div>
+                    </div>
+                    <div class="featured-course-card-content">
+                        <h3 class="featured-course-card-title">(V-ACT) ĐGNL ĐHQG Hồ Chí Minh</h3>
+                        <div class="featured-course-card-stats">
+                            <div class="featured-course-card-lessons">
+                                <iconify-icon icon="tabler:book-2" class="text-blue"
+                                    style="margin-right:6px;"></iconify-icon>
+                                30 bài học
+                            </div>
+                            <div class="featured-course-card-students">
+                                <iconify-icon icon="tabler:users" class="text-blue"
+                                    style="margin-right:6px;"></iconify-icon>
+                                120 Học viên
+                            </div>
+                        </div>
+                        <hr class="card-divider">
+                        <div class="featured-course-card-price-row">
+                            <div class="featured-course-card-price">3.900.000 đ</div>
+                            <div class="featured-course-card-discount">Giảm 50%</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-                <div>
-            <div> 
-                <div>
-                    <div>Luyện thi TSA</div>
-                    <div>5.0 sao</div>
+    </section>
+
+    <!-- Lecturers Section -->
+    <section id="lecturers-section" class="section-padding">
+        <div class="lecturers-section-content container">
+            <div class="lecturers-expertise">
+                <div class="badge-tag">Đội ngũ chuyên gia</div>
+                <h2 class="section-title">Đội ngũ giảng viên chất lượng</h2>
+                <p class="section-desc">Quy tụ những chuyên gia, thầy cô hàng đầu với kinh nghiệm luyện thi dày dặn,
+                    giúp học sinh bứt phá điểm số.</p>
+            </div>
+            <div class="lecturers-images-grid">
+                <div class="lecturer-card">
+                    <div class="lecturer-avatar-placeholder"><iconify-icon icon="tabler:user"
+                            style="font-size:32px;color:#A1A1AA;"></iconify-icon></div>
                 </div>
-                <div>image</div>
-                <div>(TSA) Đánh giá tư duy Bách khoa</div>
-                <div>
-                    <div>18 bài học</div>
-                    <div>400 Học viên</div>
+                <div class="lecturer-card">
+                    <div class="lecturer-avatar-placeholder"><iconify-icon icon="tabler:user"
+                            style="font-size:32px;color:#A1A1AA;"></iconify-icon></div>
                 </div>
-                <hr>
-                <div>
-                    <div>3.900.000 ₫</div>
-                    <div>Giảm 50%</div>
+                <div class="lecturer-card">
+                    <div class="lecturer-avatar-placeholder"><iconify-icon icon="tabler:user"
+                            style="font-size:32px;color:#A1A1AA;"></iconify-icon></div>
+                </div>
+                <div class="lecturer-card">
+                    <div class="lecturer-avatar-placeholder"><iconify-icon icon="tabler:user"
+                            style="font-size:32px;color:#A1A1AA;"></iconify-icon></div>
+                </div>
+                <div class="lecturer-card">
+                    <div class="lecturer-avatar-placeholder"><iconify-icon icon="tabler:user"
+                            style="font-size:32px;color:#A1A1AA;"></iconify-icon></div>
+                </div>
+                <div class="lecturer-card">
+                    <div class="lecturer-avatar-placeholder"><iconify-icon icon="tabler:user"
+                            style="font-size:32px;color:#A1A1AA;"></iconify-icon></div>
                 </div>
             </div>
         </div>
-                <div>
-            <div> 
-                <div>
-                    <div>Luyện thi TSA</div>
-                    <div>5.0 sao</div>
+    </section>
+
+    <!-- Future Guidance Section (Carousel Slider & Vision/Mission Cards) -->
+    <section id="future-guidance-section" class="section-padding">
+        <div class="container flex-center">
+            <div class="badge-tag">Định hướng tương lai</div>
+            <h2 class="section-title text-center text-white">Hoạt động tư vấn hướng nghiệp</h2>
+            <p class="section-desc text-center">Đồng hành cùng học sinh trong hành trình khám phá bản thân<br>và kiến tạo
+                sự nghiệp tương lai với đội ngũ chuyên gia hàng đầu.</p>
+
+            <div id="future-guidance-slide">
+                <div class="fg-slider-wrapper">
+                    <!-- Slide 1 -->
+                    <div class="fg-slide active">
+                        <img src="./images/fg_slide_1.png" alt="Lộ trình học tập cá nhân hóa">
+                        <div class="fg-slide-overlay">
+                            <div class="fg-slide-caption">Lộ trình học tập cá nhân hóa</div>
+                            <div class="fg-slide-subcaption">Định hình hướng đi riêng biệt giúp tối ưu hóa điểm số và
+                                phát huy thế mạnh cá nhân.</div>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="fg-slide">
+                        <img src="./images/fg_slide_2.png" alt="Tư vấn chọn ngành nghề">
+                        <div class="fg-slide-overlay">
+                            <div class="fg-slide-caption">Tư vấn chọn ngành, chọn nghề cùng chuyên gia</div>
+                            <div class="fg-slide-subcaption">Cung cấp thông tin thực tiễn về xu hướng thị trường lao
+                                động và định hướng nghề nghiệp phù hợp.</div>
+                        </div>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="fg-slide">
+                        <img src="./images/fg_slide_3.png" alt="Phát triển tư duy toàn diện">
+                        <div class="fg-slide-overlay">
+                            <div class="fg-slide-caption">Phát triển tư duy & kỹ năng toàn diện</div>
+                            <div class="fg-slide-subcaption">Trang bị tư duy logic vững vàng để tự tin chinh phục các kỳ
+                                thi ĐGNL lớn nhất Việt Nam.</div>
+                        </div>
+                    </div>
+                    <!-- Slide 4 -->
+                    <div class="fg-slide">
+                        <img src="./images/fg_slide_4.png" alt="Chinh phục ước mơ đại học">
+                        <div class="fg-slide-overlay">
+                            <div class="fg-slide-caption">Chinh phục ước mơ đại học Top đầu</div>
+                            <div class="fg-slide-subcaption">Đồng hành sát sao từng học viên trên chặng đường bước vào
+                                cánh cổng trường đại học mơ ước.</div>
+                        </div>
+                    </div>
                 </div>
-                <div>image</div>
-                <div>(TSA) Đánh giá tư duy Bách khoa</div>
-                <div>
-                    <div>18 bài học</div>
-                    <div>400 Học viên</div>
+
+                <!-- Navigation Buttons -->
+                <button class="fg-nav-btn fg-prev-btn" aria-label="Previous slide">
+                    <iconify-icon icon="tabler:chevron-left" style="font-size:24px"></iconify-icon>
+                </button>
+                <button class="fg-nav-btn fg-next-btn" aria-label="Next slide">
+                    <iconify-icon icon="tabler:chevron-right" style="font-size:24px"></iconify-icon>
+                </button>
+
+                <!-- Dots Indicators -->
+                <div class="fg-dots-container">
+                    <div class="fg-dot active" data-index="0"></div>
+                    <div class="fg-dot" data-index="1"></div>
+                    <div class="fg-dot" data-index="2"></div>
+                    <div class="fg-dot" data-index="3"></div>
                 </div>
-                <hr>
-                <div>
-                    <div>3.900.000 ₫</div>
-                    <div>Giảm 50%</div>
+            </div>
+
+            <div class="future-guidance-text-grid">
+                <div class="future-guidance-text-card">
+                    <div class="card-title-row">
+                        <div class="card-icon-box"><iconify-icon icon="tabler:eye"
+                                style="font-size:24px"></iconify-icon></div>
+                        <h3 class="card-title">Tầm nhìn</h3>
+                    </div>
+                    <div class="card-description">"Mang đến cơ hội hướng nghiệp toàn diện, giúp học sinh định hướng rõ
+                        ràng tương lai, phát triển bền vững theo năng lực và đam mê."</div>
+                </div>
+                <div class="future-guidance-text-card">
+                    <div class="card-title-row">
+                        <div class="card-icon-box"><iconify-icon icon="tabler:target-arrow"
+                                style="font-size:24px"></iconify-icon></div>
+                        <h3 class="card-title">Sứ mệnh</h3>
+                    </div>
+                    <div class="card-description">
+                        <div class="card-list-item">
+                            <div class="list-item-icon"><iconify-icon icon="tabler:circle-check"
+                                    style="font-size:20px"></iconify-icon></div>
+                            <div>Trang bị cho học sinh những kiến thức và kỹ năng thực tế cần thiết cho tương lai.</div>
+                        </div>
+                        <div class="card-list-item">
+                            <div class="list-item-icon"><iconify-icon icon="tabler:circle-check"
+                                    style="font-size:20px"></iconify-icon></div>
+                            <div>Hỗ trợ các trung tâm giáo dục trong việc phát triển các chương trình hướng nghiệp hiệu
+                                quả.</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-                <div>
-            <div> 
-                <div>
-                    <div>Luyện thi TSA</div>
-                    <div>5.0 sao</div>
+    </section>
+
+    <!-- Programs Section -->
+    <section id="programs-section" class="section-padding">
+        <div class="container flex-center">
+            <h2 class="section-title text-center text-white">Các chương trình tiêu biểu</h2>
+            <div class="programs-section-grid">
+                <div class="programs-section-card">
+                    <div class="card-icon-box"><iconify-icon icon="tabler:eye" style="font-size:24px"></iconify-icon>
+                    </div>
+                    <h3 class="card-title">Khám phá & Định hướng</h3>
+                    <p class="card-desc">Dành cho THPT, áp dụng mô hình Holland Code khoa học giúp học sinh thấu hiểu
+                        bản thân.</p>
                 </div>
-                <div>image</div>
-                <div>(TSA) Đánh giá tư duy Bách khoa</div>
-                <div>
-                    <div>18 bài học</div>
-                    <div>400 Học viên</div>
+                <div class="programs-section-card">
+                    <div class="card-icon-box"><iconify-icon icon="tabler:target-arrow"
+                            style="font-size:24px"></iconify-icon></div>
+                    <h3 class="card-title">Lập kế hoạch với OKRs</h3>
+                    <p class="card-desc">Tập trung vào thành công, tối ưu hóa lộ trình học tập và quản lý mục tiêu cá
+                        nhân.</p>
                 </div>
-                <hr>
-                <div>
-                    <div>3.900.000 ₫</div>
-                    <div>Giảm 50%</div>
+                <div class="programs-section-card">
+                    <div class="card-icon-box"><iconify-icon icon="tabler:brain" style="font-size:24px"></iconify-icon>
+                    </div>
+                    <h3 class="card-title">Tham vấn Hướng nghiệp</h3>
+                    <p class="card-desc">Tư vấn cá nhân/nhóm, đặt mục tiêu chuyên sâu cùng chuyên gia đầu ngành.</p>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+
+    <!-- Accomplishments Section (Hall of Fame) -->
+    <section id="accomplishments-section" class="section-padding">
+        <div class="accomplishments-card container">
+            <div class="badge-tag accomplishments-badge">
+                <iconify-icon icon="tabler:award"
+                    style="font-size:18px; margin-right:6px; vertical-align: middle;"></iconify-icon>
+                ĐẠI SẢNH DANH VỌNG
+            </div>
+            <h2 class="section-title accomplishments-title text-center">VINH DANH HỌC SINH ĐẠT THÀNH TÍCH CAO</h2>
+            <div class="accomplishments-grid">
+                <!-- Testimonial 1 -->
+                <div class="accomplishment-card">
+                    <div class="accomplishment-header">
+                        <div class="accomplishment-avatar">
+                            <img src="./images/avatar_quan.png" alt="Nguyễn Minh Quân">
+                        </div>
+                        <div class="accomplishment-info">
+                            <div class="accomplishment-name">Nguyễn Minh Quân</div>
+                            <div class="achievement-score score-hsa">128/150 HSA</div>
+                        </div>
+                    </div>
+                    <p class="accomplishment-desc">"Khóa học tại NewSkyEdu thực sự đã thay đổi tư duy làm bài của em.
+                        Những tips giải nhanh từ các Mentor giúp em tiết kiệm rất nhiều thời gian quý báu."</p>
+                </div>
+                <!-- Testimonial 2 -->
+                <div class="accomplishment-card">
+                    <div class="accomplishment-header">
+                        <div class="accomplishment-avatar">
+                            <img src="./images/avatar_ha.png" alt="Lê Thu Hà">
+                        </div>
+                        <div class="accomplishment-info">
+                            <div class="accomplishment-name">Lê Thu Hà</div>
+                            <div class="achievement-score score-tsa">92/100 TSA</div>
+                        </div>
+                    </div>
+                    <p class="accomplishment-desc">"Tài liệu của trung tâm cực kỳ sát đề thi thật. Em không bị ngợp khi
+                        bước vào phòng thi vì đã được luyện tập trên hệ thống Mock-test rất nhiều."</p>
+                </div>
+                <!-- Testimonial 3 -->
+                <div class="accomplishment-card">
+                    <div class="accomplishment-header">
+                        <div class="accomplishment-avatar">
+                            <img src="./images/avatar_long.png" alt="Trần Hoàng Long">
+                        </div>
+                        <div class="accomplishment-info">
+                            <div class="accomplishment-name">Trần Hoàng Long</div>
+                            <div class="achievement-score score-bca">ĐỖ HỌC VIỆN CSND</div>
+                        </div>
+                    </div>
+                    <p class="accomplishment-desc">"Em cảm ơn các thầy cô tại NewSkyEdu đã hỗ trợ em hết mình trong kỳ
+                        thi BCA. Lộ trình ôn tập cực kỳ khoa học và sát thực tế."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section id="why-choose-us-section" class="section-padding">
+        <div class="container flex-center">
+            <h2 class="section-title text-center text-white">LÝ DO LỰA CHỌN NEWSKYEDU OFFICIAL</h2>
+            <div class="why-choose-us-content">
+                <!-- Left Column: Circular image with overlay badge -->
+                <div class="why-choose-us-left">
+                    <div class="wcu-image-circle">
+                        <img src="./images/wcu_students.png" alt="Đội ngũ NewSkyEdu">
+                    </div>
+                    <div class="wcu-badge-card">
+                        <div class="wcu-badge-number">10+</div>
+                        <div class="wcu-badge-text">KINH NGHIỆM TRONG LĨNH VỰC<br>DU HỌC - HƯỚNG NGHIỆP VÀ ĐÀO TẠO</div>
+                    </div>
+                </div>
+                <!-- Right Column: Card items -->
+                <div class="why-choose-us-right">
+                    <!-- Card 1 -->
+                    <div class="wcu-card">
+                        <div class="wcu-card-number wcu-num-blue">01</div>
+                        <div class="wcu-card-text">
+                            <h3 class="wcu-card-title">Đội ngũ Mentor xuất sắc</h3>
+                            <p class="wcu-card-desc">Quy tụ những học sinh đạt điểm tuyệt đối 130+ HSA và các giáo viên
+                                giàu kinh nghiệm.</p>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="wcu-card">
+                        <div class="wcu-card-number wcu-num-purple">02</div>
+                        <div class="wcu-card-text">
+                            <h3 class="wcu-card-title">Hệ thống thi thử Real-Mock</h3>
+                            <p class="wcu-card-desc">Nền tảng thi online mô phỏng 100% giao diện thi thật, áp lực thời
+                                gian thực tế.</p>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="wcu-card">
+                        <div class="wcu-card-number wcu-num-orange">03</div>
+                        <div class="wcu-card-text">
+                            <h3 class="wcu-card-title">Lộ trình học Adaptive Learning</h3>
+                            <p class="wcu-card-desc">Cá nhân hóa theo từng lỗ hổng kiến thức của học sinh, giúp tiết
+                                kiệm 50% thời gian.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Consultation Section (Form & QR) -->
+    <section id="consultation-section" class="section-padding">
+        <div class="consultation-card container">
+            <!-- Left Column: Form -->
+            <div class="consultation-form-col">
+                <h3 class="consultation-form-title">Đăng ký nhận tư vấn ngay</h3>
+                <form class="consultation-form">
+                    <div class="form-row-double">
+                        <div class="form-group">
+                            <label for="fullName">HỌ VÀ TÊN</label>
+                            <input type="text" id="fullName" placeholder="Nguyễn Văn A" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phoneNumber">SỐ ĐIỆN THOẠI</label>
+                            <input type="tel" id="phoneNumber" placeholder="09xx xxx xxx" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="emailAddress">EMAIL</label>
+                        <input type="email" id="emailAddress" placeholder="example@gmail.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="courseInterest">KHÓA HỌC QUAN TÂM</label>
+                        <div class="select-wrapper">
+                            <select id="courseInterest" required>
+                                <option value="" disabled selected hidden>Luyện thi HSA (ĐHQGHN)</option>
+                                <option value="hsa">Luyện thi HSA (ĐHQGHN)</option>
+                                <option value="tsa">Luyện thi TSA (ĐHBK HN)</option>
+                                <option value="bca">Luyện thi BCA (Bộ Công An)</option>
+                                <option value="other">Khác</option>
+                            </select>
+                            <iconify-icon icon="tabler:chevron-down" class="select-icon"></iconify-icon>
+                        </div>
+                    </div>
+                    <button type="submit" class="submit-btn">
+                        Nhận tư vấn
+                        <iconify-icon icon="tabler:send-2" style="font-size: 20px;"></iconify-icon>
+                    </button>
+                </form>
+            </div>
+            <!-- Right Column: QR Code -->
+            <div class="consultation-qr-col">
+                <h4 class="consultation-qr-title">Quét mã vào nhóm tư vấn nhanh nhất</h4>
+                <div class="qr-image-wrapper">
+                    <img src="./images/consultation_qr.png" alt="Quét mã QR để đăng ký">
+                </div>
+                <div class="qr-desc">
+                    Quét mã QR để hoàn tất thủ tục ghi danh và<br>nhận ngay mã giảm giá 10% học phí sớm.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="footer-content container">
+            <!-- Col 1: Logo & Info -->
+            <div class="footer-col logo-col">
+                <div class="footer-logo">NewSky<span>Edu</span></div>
+                <p class="footer-desc">NSE - Đại sứ giáo dục HSA EDU. Đơn vị tiên phong trong lĩnh vực luyện thi ĐGNL và
+                    chứng chỉ quốc tế.</p>
+                <div class="footer-socials">
+                    <a href="#" aria-label="Website" class="social-btn">
+                        <iconify-icon icon="tabler:world" style="font-size: 20px; color: #FB9200;"></iconify-icon>
+                    </a>
+                    <a href="#" aria-label="Community" class="social-btn">
+                        <iconify-icon icon="tabler:users" style="font-size: 20px; color: #FB9200;"></iconify-icon>
+                    </a>
+                    <a href="#" aria-label="Youtube" class="social-btn">
+                        <iconify-icon icon="tabler:brand-youtube"
+                            style="font-size: 20px; color: #FB9200;"></iconify-icon>
+                    </a>
+                </div>
+            </div>
+            <!-- Col 2: Courses -->
+            <div class="footer-col">
+                <h4 class="footer-col-title">Khóa học</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Luyện thi HSA ĐHQGHN</a></li>
+                    <li><a href="#">Luyện thi TSA ĐHBKHN</a></li>
+                    <li><a href="#">Luyện thi BCA Bộ Công An</a></li>
+                    <li><a href="#">Luyện thi ĐGNL HCM</a></li>
+                </ul>
+            </div>
+            <!-- Col 3: About -->
+            <div class="footer-col">
+                <h4 class="footer-col-title">Về chúng tôi</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Về NewSkyEdu</a></li>
+                    <li><a href="#">Đội ngũ Mentor</a></li>
+                    <li><a href="#">Tin tức & Sự kiện</a></li>
+                    <li><a href="#">Chính sách bảo mật</a></li>
+                </ul>
+            </div>
+            <!-- Col 4: International Cert -->
+            <div class="footer-col cert-col">
+                <h4 class="footer-col-title">Chứng chỉ quốc tế</h4>
+                <div class="cert-badge-card">
+                    <div class="cert-badge-icon">
+                        <iconify-icon icon="tabler:discount-check-filled"
+                            style="font-size: 24px; color: #2563EB;"></iconify-icon>
+                    </div>
+                    <div class="cert-badge-text">
+                        <h5 class="cert-badge-title">LanguageCert Official Status</h5>
+                        <p class="cert-badge-desc">Trung tâm khảo thí chính thức tại Việt Nam. Chứng chỉ HSA, TSA, BCA.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div>© 2024 NewSkyEdu. Empowering future leaders through luminous education.</div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
-</html>  
+
+</html>
