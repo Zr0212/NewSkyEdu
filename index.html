@@ -14,8 +14,8 @@
     <!-- Header -->
     <header id="header" class="container">
         <!-- <div class="header-logo">NewSky<span>Edu</span></div> -->
-        <img src="/images/logo.png" alt="" style="height:47px;">
-        <button class="btn-secondary contact-header-btn">
+        <img src="/images/logo.png" alt="">
+        <button class="btn-secondary contact-header-btn open-consultation-modal">
             Liên hệ ngay
         </button>
     </header>
@@ -23,12 +23,12 @@
     <!-- Navigation Bar -->
     <nav id="top-nav-bar">
         <div class="nav-container container">
-            <a href="#" class="active">Home</a>
-            <a href="#">Đơn vị khảo thí chính thức</a>
-            <a href="#">Chương trình đào tạo</a>
-            <a href="#">Khóa học</a>
-            <a href="#">Giảng viên</a>
-            <a href="#">Liên hệ ngay</a>
+            <a href="#hero-section" class="active">Home</a>
+            <a href="#language-cert-section">Đơn vị khảo thí chính thức</a>
+            <a href="#training-program-section">Chương trình đào tạo</a>
+            <a href="#featured-courses-section">Khóa học</a>
+            <a href="#lecturers-section">Giảng viên</a>
+            <a href="#consultation-section">Liên hệ ngay</a>
         </div>
     </nav>
 
@@ -44,7 +44,7 @@
                 <div class="hero-highlight">
                     NSE - ĐẠI SỨ GIÁO DỤC<br>CỦA HSA EDUCATION
                 </div>
-                <button class="btn-secondary hero-cta-btn">
+                <button class="btn-secondary hero-cta-btn open-consultation-modal">
                     <span>Nhận tư vấn ngay</span>
                     <iconify-icon icon="tabler:arrow-right" style="font-size:24px"></iconify-icon>
                 </button>
@@ -93,7 +93,7 @@
     <!-- Language Cert Section -->
     <section id="language-cert-section" class="section-padding">
         <div class="language-cert-container container">
-            <div class="badge-tag lang-cert-badge" style="font-size: 24px;">Đơn vị đăng ký & khảo thí chính thức</div>
+            <div class="badge-tag lang-cert-badge">Đơn vị đăng ký & khảo thí chính thức</div>
             <div class="language-cert-content">
                 <div class="language-cert-name">Language<span class="text-red">Cert</span></div>
                 <p class="section-desc text-center">LanguageCert là chứng chỉ tiếng Anh quốc tế khung 6 Bậc Châu
@@ -176,8 +176,7 @@
                 </div>
             </div>
             <div class="official-partner-image">
-                <div class="official-partner-image-text">NewSkyEdu Đối tác chính thức tiếp nhận đăng ký<br>và tổ chức
-                    khảo thí LanguageCert Hải Dương - Hải Phòng</div>
+                <div class="official-partner-image-text">NewSkyEdu Đối tác chính thức tiếp nhận đăng ký và tổ chức khảo thí LanguageCert Hải Dương - Hải Phòng</div>
                 <div class="official-partner-image-overlay"></div>
             </div>
         </div>
@@ -203,7 +202,7 @@
                                 style="color: #2563EB; margin-right: 8px;"></iconify-icon>Tài liệu bám sát cấu trúc mới
                         </div>
                     </div>
-                    <button class="btn-primary">Nhận tư vấn ngay</button>
+                    <button class="btn-primary open-consultation-modal" data-course="Luyện thi HSA (ĐHQGHN)">Nhận tư vấn ngay</button>
                 </div>
                 <div class="training-program-card">
                     <div class="card-icon">
@@ -219,7 +218,7 @@
                                 style="color: #2563EB; margin-right: 8px;"></iconify-icon>Giảng viên top đầu Bách Khoa
                         </div>
                     </div>
-                    <button class="btn-primary">Nhận tư vấn ngay</button>
+                    <button class="btn-primary open-consultation-modal" data-course="Luyện thi TSA (ĐHBK HN)">Nhận tư vấn ngay</button>
                 </div>
                 <div class="training-program-card">
                     <div class="card-icon">
@@ -235,7 +234,7 @@
                                 style="color: #2563EB; margin-right: 8px;"></iconify-icon>Hỗ trợ hồ sơ xét tuyển A-Z
                         </div>
                     </div>
-                    <button class="btn-primary">Nhận tư vấn ngay</button>
+                    <button class="btn-primary open-consultation-modal" data-course="Luyện thi BCA (Bộ Công An)">Nhận tư vấn ngay</button>
                 </div>
             </div>
         </div>
@@ -253,8 +252,10 @@
                     <div class="featured-course-card-image">
                         <img class="course-img" src="/images/TSA Course.png" alt="">
                         <div class="featured-course-card-tag bg-orange">Luyện thi TSA</div>
-                        <div class="featured-course-card-rating">5.0 sao</div>
-                    </div>
+                        <div class="featured-course-card-rating text-orange">
+                            <iconify-icon icon="tabler:star" style="font-size: 14px"></iconify-icon>
+                            5.0</div>
+                        </div>
                     <div class="featured-course-card-content">
                         <h3 class="featured-course-card-title">(TSA) Đánh giá tư duy Bách khoa</h3>
                         <div class="featured-course-card-stats">
@@ -281,7 +282,10 @@
                     <div class="featured-course-card-image">
                         <img class="course-img" src="/images/HSA Course.png" alt="">
                         <div class="featured-course-card-tag bg-blue">Luyện thi HSA</div>
-                        <div class="featured-course-card-rating">4.9 sao</div>
+                        <div class="featured-course-card-rating text-blue">
+                            <iconify-icon icon="tabler:star" style="font-size: 14px"></iconify-icon>
+                            4.9
+                        </div>
                     </div>
                     <div class="featured-course-card-content">
                         <h3 class="featured-course-card-title">(HSA) ĐGNL Hà Nội</h3>
@@ -309,7 +313,10 @@
                     <div class="featured-course-card-image">
                         <img class="course-img" src="/images/BCA Course.png" alt="">
                         <div class="featured-course-card-tag bg-purple">Luyện thi</div>
-                        <div class="featured-course-card-rating">4.8 sao</div>
+                        <div class="featured-course-card-rating text-purple">
+                            <iconify-icon icon="tabler:star" style="font-size: 14px"></iconify-icon>
+                            4.8
+                        </div>
                     </div>
                     <div class="featured-course-card-content">
                         <h3 class="featured-course-card-title">ĐGNL Các Trường Sư phạm</h3>
@@ -337,7 +344,10 @@
                     <div class="featured-course-card-image">
                         <img class="course-img" src="/images/BCA Course1.png" alt="">
                         <div class="featured-course-card-tag bg-red">Luyện thi BCA</div>
-                        <div class="featured-course-card-rating">4.9 sao</div>
+                        <div class="featured-course-card-rating text-red">
+                            <iconify-icon icon="tabler:star" style="font-size: 14px"></iconify-icon>
+                            4.9
+                        </div>
                     </div>
                     <div class="featured-course-card-content">
                         <h3 class="featured-course-card-title">(BCA) ĐGNL Bộ Công an</h3>
@@ -365,7 +375,10 @@
                     <div class="featured-course-card-image">
                         <img class="course-img" src="/images/TSA Course1.png" alt="">
                         <div class="featured-course-card-tag bg-green">Luyện thi QDA</div>
-                        <div class="featured-course-card-rating">4.7 sao</div>
+                        <div class="featured-course-card-rating text-green">
+                            <iconify-icon icon="tabler:star" style="font-size: 14px"></iconify-icon>
+                            4.7
+                        </div>
                     </div>
                     <div class="featured-course-card-content">
                         <h3 class="featured-course-card-title">(QDA) ĐGNL Bộ Quốc phòng</h3>
@@ -393,7 +406,10 @@
                     <div class="featured-course-card-image">
                         <img class="course-img" src="/images/HSA Course1.png" alt="">
                         <div class="featured-course-card-tag bg-blue">Luyện thi (V-ACT)</div>
-                        <div class="featured-course-card-rating">4.9 sao</div>
+                        <div class="featured-course-card-rating text-blue">
+                            <iconify-icon icon="tabler:star" style="font-size: 14px"></iconify-icon>
+                            4.9
+                        </div>
                     </div>
                     <div class="featured-course-card-content">
                         <h3 class="featured-course-card-title">(V-ACT) ĐGNL ĐHQG Hồ Chí Minh</h3>
@@ -545,21 +561,19 @@
             <h2 class="section-title text-center text-white">Các chương trình tiêu biểu</h2>
             <div class="programs-section-grid">
                 <div class="programs-section-card">
-                    <div class="card-icon-box"><iconify-icon icon="tabler:eye" style="font-size:24px"></iconify-icon>
+                    <div class="card-icon-box blue"><iconify-icon icon="material-symbols:search" style="font-size:32px"></iconify-icon>
                     </div>
                     <h3 class="card-title">Khám phá & Định hướng</h3>
-                    <p class="card-desc">Dành cho THPT, áp dụng mô hình Holland Code khoa học giúp học sinh thấu hiểu
-                        bản thân.</p>
+                    <p class="card-desc">Dành cho THPT, áp dụng mô hình Holland Code khoa học giúp học sinh thấu hiểu bản thân.</p>
                 </div>
                 <div class="programs-section-card">
-                    <div class="card-icon-box"><iconify-icon icon="tabler:target-arrow"
-                            style="font-size:24px"></iconify-icon></div>
+                    <div class="card-icon-box orange"><iconify-icon icon="tabler:target-arrow" style="font-size:32px"></iconify-icon></div>
                     <h3 class="card-title">Lập kế hoạch với OKRs</h3>
                     <p class="card-desc">Tập trung vào thành công, tối ưu hóa lộ trình học tập và quản lý mục tiêu cá
                         nhân.</p>
                 </div>
                 <div class="programs-section-card">
-                    <div class="card-icon-box"><iconify-icon icon="tabler:brain" style="font-size:24px"></iconify-icon>
+                    <div class="card-icon-box purple"><iconify-icon icon="material-symbols:support-agent" style="font-size:32px"></iconify-icon>
                     </div>
                     <h3 class="card-title">Tham vấn Hướng nghiệp</h3>
                     <p class="card-desc">Tư vấn cá nhân/nhóm, đặt mục tiêu chuyên sâu cùng chuyên gia đầu ngành.</p>
@@ -679,37 +693,37 @@
             <!-- Left Column: Form -->
             <div class="consultation-form-col">
                 <h3 class="consultation-form-title">Đăng ký nhận tư vấn ngay</h3>
-                <form class="consultation-form">
+                <form class="consultation-form js-consultation-form">
                     <div class="form-row-double">
                         <div class="form-group">
-                            <label for="fullName">HỌ VÀ TÊN</label>
-                            <input type="text" id="fullName" placeholder="Nguyễn Văn A" required>
+                            <label>HỌ VÀ TÊN</label>
+                            <input class="js-fullname" type="text" name="fullname" placeholder="Nguyễn Văn A" required>
                         </div>
                         <div class="form-group">
-                            <label for="phoneNumber">SỐ ĐIỆN THOẠI</label>
-                            <input type="tel" id="phoneNumber" placeholder="09xx xxx xxx" required>
+                            <label>SỐ ĐIỆN THOẠI</label>
+                            <input class="js-phone" type="tel"  name="phone" placeholder="09xx xxx xxx" required>
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="emailAddress">EMAIL</label>
-                        <input type="email" id="emailAddress" placeholder="example@gmail.com" required>
+                        <label>EMAIL</label>
+                        <input class="js-email" type="email" name="email" placeholder="example@gmail.com" required>
                     </div>
                     <div class="form-group">
-                        <label for="courseInterest">KHÓA HỌC QUAN TÂM</label>
+                        <label>KHÓA HỌC QUAN TÂM</label>
                         <div class="select-wrapper">
-                            <select id="courseInterest" required>
-                                <option value="" disabled selected hidden>Luyện thi HSA (ĐHQGHN)</option>
-                                <option value="hsa">Luyện thi HSA (ĐHQGHN)</option>
-                                <option value="tsa">Luyện thi TSA (ĐHBK HN)</option>
-                                <option value="bca">Luyện thi BCA (Bộ Công An)</option>
-                                <option value="other">Khác</option>
+                            <select class="js-course" name="course" required>
+                                <option value="Luyện thi HSA (ĐHQGHN)">Luyện thi HSA (ĐHQGHN)</option>
+                                <option value="Luyện thi TSA (ĐHBK HN)">Luyện thi TSA (ĐHBK HN)</option>
+                                <option value="Luyện thi BCA (Bộ Công An)">Luyện thi BCA (Bộ Công An)</option>
+                                <option value="Khác">Khác</option>
                             </select>
-                            <iconify-icon icon="tabler:chevron-down" class="select-icon"></iconify-icon>
+                            <iconify-icon icon="tabler:chevron-down" class="select-icon">
+                            </iconify-icon>
                         </div>
                     </div>
                     <button type="submit" class="submit-btn">
                         Nhận tư vấn
-                        <iconify-icon icon="tabler:send-2" style="font-size: 20px;"></iconify-icon>
+                        <iconify-icon icon="tabler:send-2"></iconify-icon>
                     </button>
                 </form>
             </div>
@@ -787,7 +801,99 @@
         </div>
     </footer>
 
+    <!-- Floating button -->
+    <div class="floating-contact">
+
+        <a href="tel:0123456789" class="float-btn phone" title="Gọi ngay">
+            <iconify-icon icon="solar:phone-calling-bold-duotone"></iconify-icon>
+        </a>
+
+        <a href="https://facebook.com/yourpage" target="_blank" class="float-btn facebook" title="Facebook">
+            <iconify-icon icon="logos:facebook"></iconify-icon>
+        </a>
+
+        <a href="https://zalo.me/0123456789" target="_blank" class="float-btn zalo" title="Zalo">
+            Zalo
+        </a>
+
+        <a href="https://tiktok.com/@youraccount" target="_blank" class="float-btn tiktok" title="TikTok">
+            <iconify-icon icon="logos:tiktok-icon"></iconify-icon>
+        </a>
+
+        <button id="scrollTopBtn" class="float-btn scroll-top" title="Lên đầu trang">
+            <iconify-icon icon="solar:arrow-up-bold"></iconify-icon>
+        </button>
+
+    </div>
+
+    <!-- popup modal -->
+    <div class="consultation-modal" id="consultationModal">
+        <div class="consultation-modal-overlay"></div>
+        <div class="consultation-modal-wrapper">
+            <button class="modal-close">
+                <iconify-icon icon="tabler:x"></iconify-icon>
+            </button>
+            <div class="consultation-modal-content">
+                
+                <div class="consultation-card">
+                    <!-- LEFT -->
+                    <div class="consultation-form-col">
+                        <h3 class="consultation-form-title">Đăng ký nhận tư vấn ngay</h3>
+                        <form class="consultation-form js-consultation-form">
+                            <div class="form-row-double">
+                                <div class="form-group">
+                                    <label>HỌ VÀ TÊN</label>
+                                    <input class="js-fullname" type="text" name="fullname" placeholder="Nguyễn Văn A" required>
+                                </div>
+                                <div class="form-group">
+                                    <label>SỐ ĐIỆN THOẠI</label>
+                                    <input class="js-phone" type="tel" name="phone" placeholder="09xx xxx xxx" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>EMAIL</label>
+                                <input class="js-email" type="email"  name="email"  placeholder="example@gmail.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label>KHÓA HỌC QUAN TÂM</label>
+                                <div class="select-wrapper">
+                                    <select class="js-course" name="course" required>
+                                        <option value="Luyện thi HSA (ĐHQGHN)">Luyện thi HSA (ĐHQGHN)</option>
+                                        <option value="Luyện thi TSA (ĐHBK HN)">Luyện thi TSA (ĐHBK HN)</option>
+                                        <option value="Luyện thi BCA (Bộ Công An)">Luyện thi BCA (Bộ Công An)</option>
+                                        <option value="Khác">Khác</option>
+                                    </select>
+                                    <iconify-icon
+                                        icon="tabler:chevron-down"
+                                        class="select-icon">
+                                    </iconify-icon>
+                                </div>
+                            </div>
+                            <button type="submit" class="submit-btn">
+                                Nhận tư vấn
+                                <iconify-icon icon="tabler:send-2"></iconify-icon>
+                            </button>
+                        </form>
+                    </div>
+                    <!-- RIGHT -->
+                    <div class="consultation-qr-col">
+                        <h4 class="consultation-qr-title">
+                            Quét mã vào nhóm tư vấn nhanh nhất
+                        </h4>
+                        <div class="qr-image-wrapper">
+                            <img src="./images/consultation_qr.png">
+                        </div>
+                        <div class="qr-desc">
+                            Quét QR để nhận ưu đãi 10% học phí.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 
 </html>
